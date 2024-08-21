@@ -45,4 +45,4 @@ const runPuppeteerScript = async (url) => {
   }
 };
 
-module.exports = { scrapeLogic };
+module.exports = { runPuppeteerScript };

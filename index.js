@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 4000;
 
 app.get("/scrape", (req, res) => {
   const address = req.query.address;  // Extract the address from query parameters
-  scrapeLogic(address, res);  // Pass the address to scrapeLogic
+  runPuppeteerScript(address, res);  // Pass the address to scrapeLogic
 });
 
 app.get("/", (req, res) => {
